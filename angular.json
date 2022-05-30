@@ -1,0 +1,232 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "lforms": {
+      "projectType": "library",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "",
+      "architect": {
+        "build": {
+          "builder": "ngx-build-plus:browser",
+          "options": {
+            "preserveSymlinks": true,
+            "outputPath": "dist/webcomponent",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/test-data",
+              "src/test-data/form-data",
+              "src/test-data/fhir-data",
+              "src/test-data/e2e",
+              "src/test",
+              "src/test/lib/",
+              {
+                "glob": "zone.min.js",
+                "input": "node_modules/zone.js/dist/",
+                "output": "assets/lib"
+              }
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/lhc-form.css",
+              "src/flexible-row.css",
+              "src/treeline-bar.css",
+              "src/lhc-form-new-adjustments.css",
+              "src/horizontal-table.css",
+              "src/matrix.css",
+              "src/validation.css",
+              "node_modules/ng-zorro-antd/style/index.min.css",
+              "node_modules/ng-zorro-antd/checkbox/style/index.min.css",
+              "node_modules/ng-zorro-antd/radio/style/index.min.css",
+              "node_modules/ng-zorro-antd/grid/style/index.min.css",
+              "node_modules/ng-zorro-antd/popover/style/index.min.css",
+              "node_modules/ng-zorro-antd/icon/style/index.min.css",
+              "node_modules/ng-zorro-antd/date-picker/style/index.min.css",
+              "node_modules/ng-zorro-antd/time-picker/style/index.min.css",
+              "node_modules/ng-zorro-antd/switch/style/index.min.css",
+              "node_modules/autocomplete-lhc/source/auto_completion.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "namedChunks": false,
+              "extractLicenses": false,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "150kb"
+                }
+              ]
+            },
+            "debugging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "namedChunks": false,
+              "extractLicenses": false,
+              "vendorChunk": false,
+              "buildOptimizer": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "20mb",
+                  "maximumError": "50mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "60kb",
+                  "maximumError": "1500kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "lforms:build:debugging"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "lforms:build:debugging"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "lforms:build"
+          }
+        },
+        "test": {
+          "builder": "ngx-build-plus:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/test-data",
+              "src/test-data/form-data",
+              "src/test-data/fhir-data",
+              "src/test-data/e2e",
+              "src/test",
+              "src/test/fhir",
+              "src/test/webcomponent",
+              {
+                "glob": "zone.min.js",
+                "input": "node_modules/zone.js/dist/",
+                "output": "assets/lib"
+              }
+            ],
+            "styles": [
+              "src/styles.css",
+              "src/lhc-form.css",
+              "src/flexible-row.css",
+              "src/treeline-bar.css",
+              "src/lhc-form-new-adjustments.css",
+              "src/horizontal-table.css",
+              "src/matrix.css",
+              "src/validation.css",
+              "node_modules/ng-zorro-antd/style/index.min.css",
+              "node_modules/ng-zorro-antd/checkbox/style/index.min.css",
+              "node_modules/ng-zorro-antd/radio/style/index.min.css",
+              "node_modules/ng-zorro-antd/grid/style/index.min.css",
+              "node_modules/ng-zorro-antd/popover/style/index.min.css",
+              "node_modules/ng-zorro-antd/icon/style/index.min.css",
+              "node_modules/ng-zorro-antd/date-picker/style/index.min.css",
+              "node_modules/ng-zorro-antd/time-picker/style/index.min.css",
+              "node_modules/ng-zorro-antd/switch/style/index.min.css",
+              "node_modules/autocomplete-lhc/source/auto_completion.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json",
+              "cypress/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "test/e2e/protractor.conf.js",
+            "devServerTarget": "lforms:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "lforms:serve:production"
+            }
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "lforms:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "lforms:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "lforms"
+}

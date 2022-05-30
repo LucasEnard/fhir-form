@@ -1,0 +1,21 @@
+.lhc-radio-group {
+  display: flex;
+
+}
+
+.lhc-answer {
+  margin: 0;
+}
+
+.lhc-answer-other-input {
+  height: 22px;
+}
+
+.ant-radio-group,
+.ant-radio-wrapper {
+  color: rgba(0,0,0,0.85);
+}
+
+.lhc-vertical {
+  flex-direction: column;
+}

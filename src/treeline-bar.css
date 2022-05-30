@@ -1,0 +1,70 @@
+.lhc-item {
+  position: relative;
+}
+/* indentation before an item */
+.lhc-item.lhc-indentation {
+  padding-left: 24px;
+}
+/* the horizontal bar of a tree line */
+.lhc-item.lhc-tree-line::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+
+  border-top: 2px solid #2f96b4;
+  top: 14px;
+  width: 12px;
+  height: 0;
+}
+/* the vertical bar of a tree line */
+.lhc-item.lhc-tree-line::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+
+  border-left: 2px solid #2f96b4;
+  height: 100%;
+  width: 0;
+  top: 0;
+}
+/* shorter vertical bar of a tree line for the last item of a level */
+.lhc-item.lhc-tree-line.lhc-last-item::after {
+  height: 14px;
+}
+/*no tree lines for form level horizontal and matrix layouts */
+.lf-top-section .lhc-layout-horizontal.lhc-item,
+.lf-top-section .lhc-layout-matrix.lhc-item {
+  padding: 0 4px 0 3px;
+}
+.lf-top-section .lhc-layout-horizontal.lhc-item::before,
+.lf-top-section .lhc-layout-matrix.lhc-item::before {
+  border: 0;
+}
+.lf-top-section .lhc-layout-horizontal.lhc-item::after,
+.lf-top-section .lhc-layout-matrix.lhc-item::after {
+  border: 0;
+}
+/* end of tree lines */
+
+/* bar style */
+/* no horizontal bar */
+.lf-indentation-bar .lhc-item::before {
+  border-top: 0
+}
+/* the vertical bar */
+.lf-indentation-bar .lhc-item::after {
+  border: 6px solid #c6dde4;;
+  left: 6px;
+}
+/* normal vertical bar of a tree line for the last item of a level */
+.lf-indentation-bar .lhc-item.lhc-last-item::after {
+  height: 100%;
+}
+/* round bar ends for the first and the last item */
+.lf-indentation-bar .lhc-item.lhc-first-item::after {
+  border-top-left-radius: 4px;
+}
+.lf-indentation-bar .lhc-item.lhc-last-item::after {
+  border-bottom-left-radius: 4px;
+}
+/* end of bar style */

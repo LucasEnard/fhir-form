@@ -1,0 +1,44 @@
+<div *ngIf="lhcFormData">
+  <lhc-change-detection [lhcFormData]="lhcFormData"></lhc-change-detection>
+</div>
+<form *ngIf="lhcFormData" class="lhc-form lf-template-table novalidate {{viewModeClass}}" autocomplete="off" #lhcFormContainer>
+
+    <div class="lhc-form-title" role="heading" aria-level=1>
+      <span id="label-{{ lhcFormData.code }}" class="lf-question" [style]="lhcFormData._obj_titleCSS">
+        {{lhcFormData.name || lhcFormData.fhirQName}}
+      </span>
+      <span class="lf-item-code" *ngIf="lhcFormData.templateOptions.showQuestionCode">
+        <a *ngIf="lhcFormData._linkToDef" href="{{ lhcFormData._linkToDef }}" target="_blank" rel="noopener noreferrer">[{{ lhcFormData.code }}]</a>
+        <span *ngIf="!lhcFormData._linkToDef">[{{ lhcFormData.code }}]</span>
+      </span>
+      <!-- copyright -->
+      <lhc-button-popover *ngIf="lhcFormData.copyrightNotice" [item]="lhcFormData" [popoverType]="'copyright-string'" [formLevel]="true"></lhc-button-popover>
+    </div>
+
+    <!--form body-->
+    <div class="lhc-form-body">
+      <!--check form level questionLayout for matrix and horizontal layouts-->
+      <ng-container *ngIf="lhcFormData.templateOptions.displayControl" [ngSwitch]="lhcFormData.templateOptions.displayControl.questionLayout">
+        <ng-container *ngSwitchCase="'horizontal'">
+          <lhc-group-horizontal [item]="lhcFormData" [formLevel]='true'></lhc-group-horizontal>
+        </ng-container>
+        <ng-container *ngSwitchCase="'matrix'">
+          <lhc-group-matrix [item]="lhcFormData" [formLevel]='true'></lhc-group-matrix>
+        </ng-container>
+        <!-- vertical -->
+        <ng-container *ngSwitchDefault>
+          <!-- data row, for each item -->
+          <!-- check each top level item's questionLayout -->
+          <ng-container *ngIf="lhcFormData.items">
+            <ng-container *ngFor ="let item of lhcFormData.items; trackBy: lhcDataService.trackByElementId">
+              <lhc-item *ngIf="item && lhcDataService.targetShown(item) && !item._isHiddenFromView && !lhcDataService.isSubsequentHorizontalTableGroupItem(item)"
+                [item]="item" class="{{lhcDataService.getItemClassList(item, viewMode)}}"
+                id="item-{{ item._elementId }}" >
+              </lhc-item>
+              <!--header item-->
+            </ng-container>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </div>
+</form>
