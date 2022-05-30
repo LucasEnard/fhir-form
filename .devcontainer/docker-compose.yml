@@ -1,5 +1,16 @@
 version: '3.7'
 services:
+  iris:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    volumes:
+      - .:/irisdev/app
+    command: --check-caps false
+    ports:
+      - 52775:52773
+      - 51776:1972
+
   app:
     build: 
       context: .
@@ -21,28 +32,6 @@ services:
     entrypoint: /usr/local/share/docker-init.sh
     command: sleep infinity 
 
-    # Uncomment the next four lines if you will use a ptrace-based debuggers like C++, Go, and Rust.
-    # cap_add:
-    #  - SYS_PTRACE
-    # security_opt:
-    #   - seccomp:unconfined
-
-    # Uncomment the next line to use a non-root user for all processes.
-    # user: node
-
-    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
-    # (Adding the "ports" property to this file will not forward from a Codespace.)
-
-    iris:
-      build:
-        context: .
-      volumes:
-        - ./:/irisdev/app
-      command: --check-caps false
-      ports:
-        - 52775:52773
-        - 51776:1972
-        
 networks: 
   default:
     name: dapr-dev-container

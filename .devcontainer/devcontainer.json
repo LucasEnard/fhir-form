@@ -1,25 +1,39 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/dapr-javascript-node
 {
-	"name": "Js and fhir",
+	"name": "Js-and-fhir",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
-	"workspaceFolder": "/workspace",
-
-	// Use this environment variable if you need to bind mount your local source code into a new container.
-	"remoteEnv": {
-		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
-	},
+	"service": "FhirForm",
+	"workspaceFolder": "/irisdev/app",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		"objectscript.conn" :{
+			"server": "devcontainer",
+			"active": true,
+		},
+		"intersystems.servers": {
+			"devcontainer": {
+				"username": "SuperUser",
+				"password": "SYS",
+				"webServer": {
+					"scheme": "http",
+					"host": "127.0.0.1",
+					"port": 52773
+				}
+			}
+		}
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"ms-azuretools.vscode-dapr",
 		"ms-azuretools.vscode-docker",
-		"ms-vscode.vscode-typescript-tslint-plugin"
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"intersystems-community.vscode-objectscript",
+        "intersystems.language-server",
+		"intersystems-community.servermanager"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

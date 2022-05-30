@@ -1,0 +1,206 @@
+{
+  "title": "Questionnaire for testing calculatedExpression",
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
+    ]
+  },
+  "contained": [{
+    "resourceType": "ValueSet",
+    "id": "colors",
+    "expansion" : {
+      "contains": [{
+        "display": "Blue",
+        "code": "b"
+      }, {
+        "display": "Green",
+        "code": "g"
+      }]
+    }
+  }],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "colorCodings",
+        "language" : "text/fhirpath",
+        "expression": "%questionnaire.contained[0].expansion.contains"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "useOneCoding",
+        "language" : "text/fhirpath",
+        "expression": "%resource.item.where(linkId='oneCoding').answer.value.display = 'Yes'"
+      }
+    }
+  ],
+  "item": [
+    {
+      "type": "integer",
+      "code": [
+        {
+          "code": "type-integer",
+          "display": "integer"
+        }
+      ],
+      "linkId": "/type-integer",
+      "text": "integer",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "initial integer value",
+            "language" : "text/fhirpath",
+            "expression": "123"
+          }
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "code": [
+        {
+          "code": "type-string",
+          "display": "string"
+        }
+      ],
+      "linkId": "/type-string",
+      "text": "string",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "description": "initial string value",
+            "language" : "text/fhirpath",
+            "expression": "'abc123'"
+          }
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "linkId": "string-to-split",
+      "text": "Enter a sequence of unique characters"
+    },
+    {
+      "type": "string",
+      "repeats": true,
+      "linkId": "repeating-string",
+      "text": "Repeating string",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "%resource.item.where(linkId='string-to-split').answer.value.toChars()"
+          }
+        }
+      ]
+    },
+    {
+      "type": "open-choice",
+      "repeats": true,
+      "linkId": "repeating-open-choice",
+      "text": "Repeating open-choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "%resource.item.where(linkId='string-to-split').answer.value.toChars()"
+          }
+        }
+      ]
+    },
+    {
+      "type": "open-choice",
+      "repeats": true,
+      "linkId": "repeating-open-choice-from-string",
+      "text": "Repeating open-choice with off-list string values from other open-choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "%resource.item.where(linkId='repeating-open-choice').answer.value"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "linkId": "oneCoding",
+      "text": "Use just one coding below?",
+      "answerOption": [{
+        "valueCoding": {"display": "Yes"}
+      },{
+        "valueCoding": {"display": "No"}
+      }]
+    },
+    {
+      "type": "open-choice",
+      "repeats": true,
+      "linkId": "repeating-open-choice-coding",
+      "text": "Repeating open-choice with off-list codings",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "iif(%useOneCoding, %colorCodings[0], %colorCodings)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "repeats": true,
+      "linkId": "repeating-choice",
+      "text": "Repeating choice with on-list codings",
+      "answerValueSet": "#colors",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "iif(%useOneCoding, %colorCodings[0], %colorCodings)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "repeats": true,
+      "linkId": "repeating-group",
+      "text": "Repeating group containing a repeating item",
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/variable",
+        "valueExpression": {
+          "name": "splitString",
+          "language" : "text/fhirpath",
+          "expression": "item.where(linkId='non-repeating-q').answer.value"
+        }
+      }],
+      "item": [{
+        "type": "string",
+        "text": "Enter string to create repetitions of the next question",
+        "linkId": "non-repeating-q"
+      }, {
+        "type": "string",
+        "text": "Calculated repeptitions",
+        "repeats": true,
+        "linkId": "repeating-q-in-repeating-group",
+        "extension": [{
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language" : "text/fhirpath",
+            "expression": "%splitString.toChars()"
+          }
+        }]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+09:11:49 2022-05-30 [INFO] Executing command /home/irisowner/irissys/startISCAgent.sh 2188...
+09:11:49 2022-05-30 [INFO] Writing status to file: /home/irisowner/irissys/iscagent.status
+Reading configuration from file: /home/irisowner/irissys/iscagent.conf
+ISCAgent[19]: Starting
+ISCAgent[20]: Starting ApplicationServer on *:2188
+
+09:11:49 2022-05-30 [INFO] ...executed command /home/irisowner/irissys/startISCAgent.sh 2188
+09:11:49 2022-05-30 [INFO] Starting InterSystems IRIS instance IRIS...
+09:12:04 2022-05-30 [INFO] Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+This copy of InterSystems IRIS has been licensed for use exclusively by:
+InterSystems IRIS Community
+Copyright (c) 1986-2022 by InterSystems Corporation
+Any other use is a violation of your license agreement
+Starting IRIS
+
+
+09:12:04 2022-05-30 [INFO] ...started InterSystems IRIS instance IRIS
+09:15:25 2022-05-30 [INFO] Executing command /home/irisowner/irissys/startISCAgent.sh 2188...
+09:15:25 2022-05-30 [INFO] Writing status to file: /home/irisowner/irissys/iscagent.status
+Reading configuration from file: /home/irisowner/irissys/iscagent.conf
+ISCAgent[19]: Starting
+ISCAgent[20]: Starting ApplicationServer on *:2188
+
+09:15:25 2022-05-30 [INFO] ...executed command /home/irisowner/irissys/startISCAgent.sh 2188
+09:15:25 2022-05-30 [INFO] Starting InterSystems IRIS instance IRIS...
+10:32:22 2022-05-30 [INFO] Executing command /home/irisowner/irissys/startISCAgent.sh 2188...
+10:32:22 2022-05-30 [INFO] Writing status to file: /home/irisowner/irissys/iscagent.status
+Reading configuration from file: /home/irisowner/irissys/iscagent.conf
+ISCAgent[18]: Starting
+ISCAgent[22]: Starting ApplicationServer on *:2188
+
+10:32:22 2022-05-30 [INFO] ...executed command /home/irisowner/irissys/startISCAgent.sh 2188
+10:32:22 2022-05-30 [INFO] Starting InterSystems IRIS instance IRIS...
+10:32:42 2022-05-30 [INFO] Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+This copy of InterSystems IRIS has been licensed for use exclusively by:
+InterSystems IRIS Community
+Copyright (c) 1986-2022 by InterSystems Corporation
+Any other use is a violation of your license agreement
+
+1 alert(s) during startup. See messages.log for details.
+Starting IRIS
+
+
+10:32:42 2022-05-30 [INFO] ...started InterSystems IRIS instance IRIS
+10:39:47 2022-05-30 [INFO] Shutting down InterSystems IRIS instance IRIS...
+10:39:52 2022-05-30 [INFO] Verifying InterSystems IRIS instance IRIS is down...
+10:39:52 2022-05-30 [INFO] IRIS^/usr/irissys^2021.2.0.651.0com^down, last used Mon May 30 10:39:49 2022^iris.cpf^1972^52773^0^^IRISHealth^^^/usr/irissys
+
+10:39:52 2022-05-30 [INFO] ...verified that InterSystems IRIS instance IRIS is down
+10:39:53 2022-05-30 [INFO] Executing command /home/irisowner/irissys/startISCAgent.sh 2188...
+10:39:53 2022-05-30 [INFO] Writing status to file: /home/irisowner/irissys/iscagent.status
+Reading configuration from file: /home/irisowner/irissys/iscagent.conf
+ISCAgent[17]: Starting
+ISCAgent[22]: Starting ApplicationServer on *:2188
+
+10:39:53 2022-05-30 [INFO] ...executed command /home/irisowner/irissys/startISCAgent.sh 2188
+10:39:53 2022-05-30 [INFO] Starting InterSystems IRIS instance IRIS...
+10:40:09 2022-05-30 [INFO] Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+Starting Control Process
+Global buffer setting requires attention.  Auto-selected 25% of total memory.
+Allocated 3073MB shared memory: 2491MB global buffers, 300MB routine buffers
+This copy of InterSystems IRIS has been licensed for use exclusively by:
+InterSystems IRIS Community
+Copyright (c) 1986-2022 by InterSystems Corporation
+Any other use is a violation of your license agreement
+
+1 alert(s) during startup. See messages.log for details.
+Starting IRIS
+
+
+10:40:09 2022-05-30 [INFO] ...started InterSystems IRIS instance IRIS
