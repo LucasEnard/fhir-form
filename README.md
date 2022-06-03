@@ -1,6 +1,6 @@
-# 1. SMART app for FHIR forms using a local fhir server
+# 1. App for FHIR forms using a local fhir server
 
-- [1. SMART app for FHIR forms using a local fhir server](#1-smart-app-for-fhir-forms-using-a-local-fhir-server)
+- [1. App for FHIR forms using a local fhir server](#1-app-for-fhir-forms-using-a-local-fhir-server)
 - [2. Requirements](#2-requirements)
   - [2.1. Add Node.js and npm to your path](#21-add-nodejs-and-npm-to-your-path)
   - [2.2. Install Dependencies](#22-install-dependencies)
