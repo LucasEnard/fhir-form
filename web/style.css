@@ -1,8 +1,0 @@
-.main-content {
-  margin-top: 4rem;
-}
-
-table > tbody > tr:hover {
-  background-color: var(--bs-table-hover-bg);
-  color: var(--bs-table-hover-color);
-}

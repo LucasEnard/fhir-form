@@ -17,20 +17,21 @@ This is an app mainly based on [this repo](https://github.com/lhncbc/lforms-fhir
 [SDC](http://hl7.org/fhir/uv/sdc/2018Sep/index.html)<br>
 [Questionnaire](http://hl7.org/fhir/uv/sdc/2018Sep/sdc-questionnaire.html)<br>
 and collect data as FHIR QuestionnaireResponse resources.<br>
-By building it using `docker-compose up -d` you will have access to a local FHIR server that can then be used to test the app.
+By building it using `docker-compose up -d` you will have access to a [local FHIR server](#5-local-fhir-server) that can then be used to test the app.
 
 # 2. Requirements
 The app relies on the [LHC-Forms](http://lhncbc.github.io/lforms/) rendering
 widget for displaying forms. It has partial support for FHIR Questionnaires
 (versions STU3 and R4) and the [Structured Data Capture Implementation
-Guide](http://build.fhir.org/ig/HL7/sdc/).
+Guide](http://build.fhir.org/ig/HL7/sdc/).<br>
+This widget will be installed with the dependencies.
 
 For some sample forms to try, this repository comes with some forms under
-e2e-test/data that are automatically loaded into the local FHIR server at build.
+`e2e-test/data/R4` that are automatically loaded into the local FHIR server at build.
 
 ## 2.1. Add Node.js and npm to your path
 The file bashrc.lforms-fhir-app specifies the version of Node.js we are using
-for development.  Download that version of Node.js, and add its bin directory to
+for development. Download that version of Node.js, and add its bin directory to
 your path.
 
 ## 2.2. Install Dependencies
@@ -66,7 +67,7 @@ By using [this online tool](https://lhcformbuilder.nlm.nih.gov/beta/) you can ea
 We advise you to import one of the existing one in the `e2e-tests/data/R4` folder and start from here to understand how the tool works.
 
 ## 4.2. Importing your FHIR form
-Using the app, you can easily import your local forms and use them right away using the import button.<br>
+Using the app, you can easily import your local forms and use them right away using the `upload` button.<br>
 If you are using the [formbuilder tool](https://lhcformbuilder.nlm.nih.gov/beta/), you can, if you have a [started FHIR server](#local-fhir-server), export the form you are creating directly to the fhir server using the export button.
 
 # 5. Local FHIR server

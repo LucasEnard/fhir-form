@@ -21,7 +21,4 @@
     do strategy.SaveServiceConfigData(config)
 
     do ##class(HS.FHIRServer.Tools.DataLoader).SubmitResourceFiles("/home/irisowner/fhirdata/", "FHIRServer", "/fhir/r4")
-
-    zn "USER"
-    zpm "load /home/irisowner/fhirapp":1
     halt
