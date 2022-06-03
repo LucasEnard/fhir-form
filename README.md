@@ -4,13 +4,13 @@
 - [2. Requirements](#2-requirements)
   - [2.1. Add Node.js and npm to your path](#21-add-nodejs-and-npm-to-your-path)
   - [2.2. Install Dependencies](#22-install-dependencies)
-- [3. Using the app](#3-using-the-app)
-  - [3.1. Build the application](#31-build-the-application)
-  - [3.2. Run the Application](#32-run-the-application)
-- [4. FHIR form / questionnaire](#4-fhir-form--questionnaire)
-  - [4.1. Creating your own FHIR form](#41-creating-your-own-fhir-form)
-  - [4.2. Importing your FHIR form](#42-importing-your-fhir-form)
-- [5. Local FHIR server](#5-local-fhir-server)
+- [3. Local FHIR server](#3-local-fhir-server)
+- [4. Using the app](#4-using-the-app)
+  - [4.1. Build the application](#41-build-the-application)
+  - [4.2. Run the Application](#42-run-the-application)
+- [5. FHIR form / questionnaire](#5-fhir-form--questionnaire)
+  - [5.1. Creating your own FHIR form](#51-creating-your-own-fhir-form)
+  - [5.2. Importing your FHIR form](#52-importing-your-fhir-form)
 
 This is an app mainly based on [this repo](https://github.com/lhncbc/lforms-fhir-app) that can be used to display<br>
 [FHIR](http://hl7.org/fhir/)<br>
@@ -41,37 +41,8 @@ By running this command you will be able to install everything needed for the ap
 npm ci
 ```
 
-# 3. Using the app
-To use the app you have to build it then start it.<br>
-You can now access any FHIR server of your choice using the menu of the app but if you want you can use this [local FHIR server](#local-fhir-server)
-
-## 3.1. Build the application
-```
-npm run build
-```
-This will create files for production in a "dist" directory, but will also copy
-some needed files into place from node_modules.
-
-## 3.2. Run the Application
-```
-npm run start
-```
-will start an http server running at port 8000.
-
-Now browse to the app at `localhost:8000/lforms-fhir-app/`.
-
-# 4. FHIR form / questionnaire
-
-## 4.1. Creating your own FHIR form 
-By using [this online tool](https://lhcformbuilder.nlm.nih.gov/beta/) you can easily build your own form from scratch or using an already existing one.<br>
-We advise you to import one of the existing one in the `e2e-tests/data/R4` folder and start from here to understand how the tool works.
-
-## 4.2. Importing your FHIR form
-Using the app, you can easily import your local forms and use them right away using the `upload` button.<br>
-If you are using the [formbuilder tool](https://lhcformbuilder.nlm.nih.gov/beta/), you can, if you have a [started FHIR server](#local-fhir-server), export the form you are creating directly to the fhir server using the export button.
-
-# 5. Local FHIR server
-You can start and use a local FHIR server powered by InterSystems technologies by doing inside the `fhir-form` folder :
+# 3. Local FHIR server
+If you don't have a FHIR server to try this app out, you can start and use a local FHIR server powered by InterSystems technologies by doing inside the `fhir-form` folder :
 
 ```
 docker-compose up -d
@@ -79,3 +50,40 @@ docker-compose up -d
 
 After some wait, your local FHIR server is up and you can access it by using `http://localhost:32783/fhir/r4`<br>
 Note that this link is already registered in the app.
+
+# 4. Using the app
+To use the app you have to [build](#41-build-the-application) it then [start](#42-run-the-application) it.<br>
+You can now access any FHIR server of your choice using the menu of the app but if you want you can use this [local FHIR server](#3-local-fhir-server)
+
+## 4.1. Build the application
+```
+npm run build
+```
+This will create files for production in a "dist" directory, but will also copy
+some needed files into place from node_modules.
+
+## 4.2. Run the Application
+```
+npm run start
+```
+will start an http server running at port 8000.
+
+Now browse to the app at `localhost:8000/lforms-fhir-app/`.
+
+Here you can choose a server to connect to.<br>
+If you want to use the local FHIR server, [start the local FHIR server](#3-local-fhir-server) then, on the app select the first choice `http://localhost:32783/fhir/r4`<br>
+
+# 5. FHIR form / questionnaire
+
+## 5.1. Creating your own FHIR form 
+By using [this online tool](https://lhcformbuilder.nlm.nih.gov/beta/) you can easily build your own form from scratch or using an already existing one.<br>
+We advise you to import one of the existing one in the `e2e-tests/data/R4` folder and start from here to understand how the tool works.
+
+## 5.2. Importing your FHIR form
+Using the app, you can easily import your local forms and use them right away using the `upload` button.<br><br><br>
+
+If you are using the [formbuilder tool](https://lhcformbuilder.nlm.nih.gov/beta/), you can, if you have a FHIR server supporting the Content-Type 'application/json', export the form you are creating directly to the fhir server using the `export` button.
+
+If your server doesn't support the Content-Type 'application/json' but only the Content-Type 'application/json+fhir' for example, as our [local FHIR server](#3-local-fhir-server) you must `export` the form to a file, then on the app, `upload` the file to the server as the app communicate in Content-Type 'application/json+fhir'.
+
+
