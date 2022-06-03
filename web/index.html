@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FHIR</title>
+
+  <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendor/fontawesome.all.min.css" />
+  <!-- <link rel="stylesheet" href="vendor/react-fhir.min.css" /> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <div id="root"></div>
+
+  <!-- <script src="vendor/popper.min.js"></script> -->
+  <script src="vendor/react.production.min.js"></script>
+  <script src="vendor/react-dom.production.min.js"></script>
+  <script src="vendor/history.production.min.js"></script>
+  <script src="vendor/react-router.production.min.js"></script>
+  <script src="vendor/react-router-dom.production.min.js"></script>
+  <script src="vendor/react-bootstrap.min.js"></script>
+  <!-- <script src="vendor/react-fhir.min.js"></script> -->
+  <script src="vendor/infinitescroll.js"></script>
+  <script src="vendor/babel.min.js"></script>
+
+  <script src="app.js" type="text/babel"></script>
+  <script type="text/babel">
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+
+</html>

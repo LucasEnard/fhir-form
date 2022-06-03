@@ -1,0 +1,314 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "178918",
+  "meta": {
+    "lastUpdated": "2017-08-04T15:07:37.602+00:00",
+    "profile": [
+      "http://hl7.org/fhir/us/sdc/StructureDefinition/sdc-questionnaire|2.0"
+    ]
+  },
+  "url": "http://hl7.org/fhir/us/sdc/Questionnaire/74728-7",
+  "identifier": [
+    {
+      "system": "http://loinc.org",
+      "value": "74728-7"
+    }
+  ],
+  "name": "Vital signs, weight, height, head circumference, oximetry, BMI, & BSA panel",
+  "title": "Vital signs, weight, height, head circumference, oximetry, BMI, & BSA panel",
+  "status": "draft",
+  "date": "2017-08-04T10:35:45-04:00",
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "74728-7",
+      "display": "Vital signs, weight, height, head circumference, oximetry, BMI, & BSA panel"
+    }
+  ],
+  "subjectType": [
+    "Patient",
+    "Person"
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "%"
+          }
+        }
+      ],
+      "linkId": "/2710-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "2710-2",
+          "display": "SaO2 % BldC Oximetry"
+        }
+      ],
+      "text": "SaO2 % BldC Oximetry",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "display": "lbs"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "display": "kgs"
+          }
+        }
+      ],
+      "initialQuantity": {
+        "unit": "lbs"
+      },
+      "linkId": "/3141-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "3141-9",
+          "display": "Weight Measured"
+        }
+      ],
+      "text": "Weight Measured",
+      "type": "quantity",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm"
+          }
+        }
+      ],
+      "linkId": "/8287-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8287-5",
+          "display": "Head Circumf OFC by Tape measure"
+        }
+      ],
+      "text": "Head Circumf OFC by Tape measure",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[in_i]",
+            "display": "inches"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "[ft_i]",
+            "display": "feet"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "cm",
+            "display": "centimeters"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "m",
+            "display": "meters"
+          }
+        }
+      ],
+      "linkId": "/8302-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Bdy height"
+        }
+      ],
+      "text": "Bdy height",
+      "type": "quantity",
+      "initialQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "inches",
+          "code": "[in_i]"
+      },
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "Cel"
+          }
+        }
+      ],
+      "linkId": "/8310-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Body temperature",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        }
+      ],
+      "linkId": "/8462-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "BP dias"
+        }
+      ],
+      "text": "BP dias",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        }
+      ],
+      "linkId": "/8480-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "BP sys"
+        }
+      ],
+      "text": "BP sys",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{beats}/min"
+          }
+        }
+      ],
+      "linkId": "/8867-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        }
+      ],
+      "text": "Heart rate",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{breaths}/min"
+          }
+        }
+      ],
+      "linkId": "/9279-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Resp rate"
+        }
+      ],
+      "text": "Resp rate",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "m2"
+          }
+        }
+      ],
+      "linkId": "/3140-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "3140-1",
+          "display": "BSA Derived"
+        }
+      ],
+      "text": "BSA Derived",
+      "type": "decimal",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
+          }
+        }
+      ],
+      "linkId": "/39156-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "BMI"
+        }
+      ],
+      "text": "BMI",
+      "type": "decimal",
+      "required": false
+    }
+  ]
+}

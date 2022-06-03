@@ -1,0 +1,15 @@
+services:
+  iris:
+    build: .
+    image: Fhir-form-server
+    restart: always
+    ports: 
+      - 32782:1972
+      - 32783:52773
+      - 32784:53773
+    command: 
+      - --check-caps false
+      - -a
+      - iris session iris -U%SYS '##class(Security.Users).UnExpireUserPasswords("*")'
+    volumes:
+      - ./web:/usr/irissys/csp/fhirapp

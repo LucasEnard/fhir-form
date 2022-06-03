@@ -1,0 +1,51 @@
+{
+  "name": "lforms-fhir-app",
+  "version": "2.0.2",
+  "description": "A SMART on FHIR app for lforms",
+  "repository": "https://github.com/lhncbc/lforms-fhir-app",
+  "source": [
+    ".tmp/index.html",
+    ".tmp/launch.html"
+  ],
+  "serverPort": "8000",
+  "devDependenciesComments": [
+    "autocomplete-lhc is included only for its test helpers; for the app it is pulled in through lforms"
+  ],
+  "devDependencies": {
+    "autocomplete-lhc": "^18.2.0",
+    "http-server": "^14.1.0",
+    "jasmine-core": "^3.2.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-junit-reporter": "^1.2.0",
+    "parcel": "^2.1.1",
+    "protractor": "^7.0.0",
+    "rimraf": "^3.0.2",
+    "ssi": "^0.3.0",
+    "superagent": "^6.1.0",
+    "tmp": "^0.2.1"
+  },
+  "scripts": {
+    "build:clean": "rimraf dist .tmp",
+    "build:pages": "node -e '(new (require(\"ssi\"))(\"source/html-ssi\", \".tmp\", \"/*.html\", true)).compile()'",
+    "build:preparcel": "npm run build:clean && npm run build:pages",
+    "build-dev": "npm run build:preparcel && PARCEL_WORKER_BACKEND=process parcel build --dist-dir dist/$npm_package_name --public-url . --no-optimize",
+    "build:parcel": "PARCEL_WORKER_BACKEND=process parcel build --dist-dir dist/$npm_package_name --public-url .",
+    "build": "npm run build:preparcel && npm run build:parcel",
+    "prestart": "echo \"Website starting at http://localhost:8000/$npm_package_name\"",
+    "start": "http-server -s -o $npm_package_name -a localhost -p $npm_package_serverPort -c-1 dist",
+    "start-no-open": "http-server -s -a localhost -p $npm_package_serverPort -c-1 dist",
+    "start-public": "http-server -s -o $npm_package_name -p $npm_package_serverPort -c-1 dist",
+    "prestart-public": "npm run prestart",
+    "update-webdriver": "node node_modules/protractor/bin/webdriver-manager update --versions.chrome $(google-chrome --version |awk '{print $NF}')",
+    "test": "npm run start-no-open & sleep 5; npm run update-webdriver && protractor e2e-tests/protractor.conf.js; s=$?; kill %1; exit $s"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "escape-html": "^1.0.3",
+    "fhirclient": "^2.4.0",
+    "lforms-updater": "^29.0.2"
+  }
+}

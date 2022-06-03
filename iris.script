@@ -20,10 +20,8 @@
     set config.DebugMode = 4
     do strategy.SaveServiceConfigData(config)
 
-    zn "%SYS"
-    Do ##class(Security.Users).UnExpireUserPasswords("*")
+    do ##class(HS.FHIRServer.Tools.DataLoader).SubmitResourceFiles("/home/irisowner/fhirdata/", "FHIRServer", "/fhir/r4")
 
-    do ##class(Security.Services).Get("%Service_CallIn",.prop)
-    set prop("Enabled")=1
-    set prop("AutheEnabled")=48
-    do ##class(Security.Services).Modify("%Service_CallIn",.prop)
+    zn "USER"
+    zpm "load /home/irisowner/fhirapp":1
+    halt
