@@ -34,6 +34,17 @@ The file bashrc.lforms-fhir-app specifies the version of Node.js we are using
 for development. Download that version of Node.js, and add its bin directory to
 your path.
 
+You can do on mac os :
+```
+brew update
+brew install nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+nvm install 14
+nvm use 14
+```
+To install and use node version 14.
+
 ## 2.2. Install Dependencies
 By running this command you will be able to install everything needed for the app to work.
 
