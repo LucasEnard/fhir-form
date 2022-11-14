@@ -11,3 +11,14 @@ services:
       - --check-caps false
       - -a
       - iris session iris -U%SYS '##class(Security.Users).UnExpireUserPasswords("*")'
+
+  form:
+    build: 
+      context: .
+      dockerfile: dockerfile-npm
+    image: fhir-form
+    restart: always
+    ports:
+      - 8080:80
+    depends_on:
+      - iris
