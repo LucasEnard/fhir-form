@@ -1,0 +1,24 @@
+# create a multi-stage build
+FROM node:14 as build
+
+# set working directory
+WORKDIR /app
+
+# install and cache app dependencies
+COPY package.json /app/package.json
+RUN npm install
+
+# add app
+COPY . /app
+
+# build app
+RUN npm run build
+
+# production environment
+FROM nginx:1.17.1-alpine
+
+COPY --from=build /app/dist/lforms-fhir-app/ /usr/share/nginx/html/lforms-fhir-app/
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
